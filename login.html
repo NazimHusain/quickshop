@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- it is used for google awesome font -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet"
+		type="text/css" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- it is used for helping jquery in form validation -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<!-- it used for awesome icone -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<!-- it is used for css designing  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- it is used for validation from java script -->
+	<script src="js/loging_validation.js"></script>
+
+
+
+
+	<title>NatureImages.com</title>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container-fluid bg-dark mt-2">
+			<p><strong style="color: aliceblue;">A fresh approach to shopping.<span class=" float-lg-right">Get UPTO 40%
+						OFF on your 1st order.</span></strong></p>
+
+
+
+		</div>
+
+		<div class="top-header">
+			<div class="container">
+				<img src="image_effect/1.png" alt="QuickShop" height="70">
+				<form class="form-inline float-lg-right mt-4">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+
+		</div>
+		<div class="container">
+			<div class="navbar">
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-1 nav-pills">
+			<a class="navbar-brand" href="/index.html"><span class=" font-weight-bold text-danger">Quick</span>Shop <i
+					class="fab fa-shopify"></i></a>
+
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+				<ul class="navbar-nav ml-auto mr-5 ">
+
+					<li class="nav-item active">
+						<a class="nav-link" href="/index.html"><i class="fas fa-home"></i> Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/order.html">Order <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/cart.html">Cart<span
+								class=" badge-pill badge-primary ml-0 product-in-cart">12</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/user.html">Profile<i class=" fas fa-user ml-1"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/login.html">Login <i class="fas fa-sign-in-alt"></i></a>
+					</li>
+
+				</ul>
+			</div>
+			<!-- <form class="form-inline float-left">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+		</nav>
+	</div>
+
+
+	<div class=" container-fluid my-3">
+		<div class="card bg-light">
+			<div class="card-boby mx-auto">
+				<h4 class="card-title mt-3 text-center">Create Account</h4>
+				<p class="text-center">Get Started With Your Account</p>
+				<a href="#" class="btn btn-block btn-danger">
+					<i class="fab fa-google "></i>
+					Login With Google</a>
+				<a href="#" class="btn btn-block btn-primary">
+					<i class="fab fa-facebook "></i>
+					Login With Facebook</a>
+
+				<!-- OR -->
+
+				<p class="divider">
+					<span class="bg-light">OR</span>
+				</p>
+				<!-- Form Started -->
+
+
+				<form onsubmit="return validate()" novalidate action="login.html" method="post">
+					<!-- Name input Fied -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+								<i class="fa fa-user"></i>
+							</span>
+
+						</div>
+
+						<input type="name" class="form-control name_field" id="name_field"
+							placeholder="Enter Your Name" />
+
+					</div>
+					<small class="name-msg-field"></small>
+
+					<!-- Email Input Field -->
+					<div class="form-group input-group ">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+								<i class="fa fa-envelope "></i>
+							</span>
+						</div>
+
+						<input type="email" class="form-control" id="email_field" placeholder="Enter Your Email" />
+					</div>
+					<small class="email-msg-field"></small>
+					<!-- Phone Input Field -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+								<i class="fa fa-phone"></i>
+							</span>
+						</div>
+						<select class="custom-select" style="max-width:80px">
+							<option>+91</option>
+							<option>+92</option>
+							<option>+93</option>
+							<option>+94</option>
+						</select>
+
+						<input type="phone" class="form-control" id="phone_field" placeholder="Enter Your phone " />
+					</div>
+					<small class="phone-msg-field"></small>
+					<!-- Select User Type Input Field -->
+
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+								<i class="fa fa-building"></i>
+							</span>
+						</div>
+						<select class="form-control ">
+							<option selected disabled>--Select User Type--</option>
+							<option>Admin</option>
+							<option>Student</option>
+							<option>Teacher</option>
+							<option>Pricipal</option>
+						</select>
+
+
+					</div>
+
+
+					<!-- password Inpur Field -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+								<i class="fa fa-lock "></i>
+							</span>
+						</div>
+
+						<input type="password" class="form-control" id="Password_field"
+							placeholder="Enter Your Password" />
+					</div>
+
+					<small class="password-msg-field"></small>
+					<!-- re_type Password Field -->
+
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">
+								<i class="fa fa-unlock  "></i>
+							</span>
+						</div>
+
+						<input type="password" class="form-control" id="re_password_filed"
+							placeholder="Re-Enter Your Password" />
+					</div>
+					<small class="repassword-msg-field"></small>
+					<button type="submit" class="btn btn-block btn-success ">Register </button>
+					<p class="text-center mt-3 badge-pill"><a href="login.html"> Have an account ??</P></a>
+				</form>
+
+			</div>
+			<div>
+			</div>
+
+
+
+
+			
+    <!-- Footer -->   
+        
+    <div class="row bg-dark mt-4">
+
+        <div class="col mt-4"> 
+            <div class=" container">
+                <ul>
+                    <p class=" font-weight-bolder text-white">UseFull Links</p>
+                    <a class="nav-link active text-white" href="#">About_US</a>
+                    <a class="nav-link active text-white" href="#">What We Do</a>
+                    <a class="nav-link active text-white" href="#">FAQ Page</a>
+                   
+                    
+                </ul>
+            </div>
+
+        </div>
+        <div class="col mt-4"> 
+            <div class=" container">
+                <ul>
+                    <p class=" font-weight-bolder text-white">Our Polices </p>
+                    <a class="nav-link active text-white" href="#">Privacy Policy</a>
+                    <a class="nav-link active text-white" href="#">Refund Policy</a>
+                    <a class="nav-link active text-white" href="#">Term Of Services</a>
+                
+                    
+                </ul>
+            </div>
+
+        </div>
+        <div class="col mt-4"> 
+            <div class=" container">
+                <ul>
+                    <p class=" font-weight-bolder text-white">Information Info</p>
+                    <a class="nav-link active text-white" href="#"><i class="fas fa-envelope-square"> </i> husain0001@outlook.com</a>
+                    <a class="nav-link active text-white" href="#"><i class="fas fa-mobile-alt"> </i> 9012826369</a>
+                    <a class="nav-link active text-white" href="#"><i class="fas fa-map-marker-alt"> </i> Bilaspur ,Rampur,Uttar Pradesh</a>
+                
+                    
+                </ul>
+            </div>
+
+        </div>
+
+
+</div>
+
+           
+
+			<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+				integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+				crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+				integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+				crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+				integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+				crossorigin="anonymous"></script>
+</body>
+
+</html>
